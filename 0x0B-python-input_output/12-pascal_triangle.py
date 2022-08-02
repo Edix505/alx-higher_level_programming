@@ -3,13 +3,13 @@
 
 
 def pascal_triangle(n):
-    '''the Pascal’s triangle of y
+    '''the Pascal’s triangle of n
     '''
-    if y <= 0:
+    if n <= 0:
         return list()
 
     x = []
-    for line in range(0, y):
+    for line in range(0, n):
         # Every line has number of
         # integers equal to line
         # number
@@ -20,12 +20,12 @@ def pascal_triangle(n):
     return x
 
 
-def magic(y, k):
+def magic(n, k):
     '''magic function that does some magic'''
     res = 1
-    if (k > y - k):
-        k = y - k
+    if (k > n - k):
+        k = n - k
     for a in range(0, k):
-        res = res * (y - a)
+        res = res * (n - a)
         res = res // (a + 1)
     return res
