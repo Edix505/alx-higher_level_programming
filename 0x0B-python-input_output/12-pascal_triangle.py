@@ -3,9 +3,9 @@
 
 
 def pascal_triangle(n):
-    '''the Pascal’s triangle of n
+    '''the Pascal’s triangle of y
     '''
-    if n <= 0:
+    if y <= 0:
         return list()
 
     x = []
