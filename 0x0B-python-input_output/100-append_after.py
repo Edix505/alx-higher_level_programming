@@ -11,6 +11,6 @@ def append_after(filename="", search_string="", new_string=""):
         NL = []
         for x in range(len(lin)):
             NL.append(lin[x])
-            if search_string in lin[i]:
+            if search_string in lin[x]:
                 NL.append(new_string)
         f.writelines(NL)
