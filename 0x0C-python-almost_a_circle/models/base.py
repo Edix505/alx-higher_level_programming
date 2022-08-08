@@ -10,12 +10,13 @@ class Base:
     __nb_objects = 0
 
     def __init__(self, id=None):
-        """ Initializes instances """
+        """ Initializes base instances """
         if id is not None:
             self.id = id
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+...................................................
 
     @staticmethod
     def to_json_string(list_dictionaries):
@@ -105,7 +106,7 @@ class Base:
 
     @classmethod
     def load_from_file_csv(cls):
-        """ Method that loads a CSV file """
+        """ that loads file """
         filename = "{}.csv".format(cls.__name__)
 
         if os.path.exists(filename) is False:
